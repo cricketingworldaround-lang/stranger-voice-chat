@@ -22,7 +22,7 @@ export default function VoiceChat() {
   };
 
   useEffect(() => {
-    const socket = io();
+   const socket = io("https://stranger-voice-chat-tf2z.onrender.com");
     socketRef.current = socket;
 
     socket.on("connect", () => {
